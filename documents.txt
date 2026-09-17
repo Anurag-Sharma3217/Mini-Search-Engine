@@ -1,0 +1,4 @@
+Python is a programming language.
+Python is used in AI, Machine Learning and Automation very much.
+AI stands for Artificial Intelligence. It is a machine with it's own brain and can even improve theirselves with experiences. It like evolution.
+Reading is a habit that can make you extremely knowledgeable.
