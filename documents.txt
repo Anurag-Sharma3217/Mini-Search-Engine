@@ -1,4 +1,16 @@
-Python is a programming language.
-Python is used in AI, Machine Learning and Automation very much.
-AI stands for Artificial Intelligence. It is a machine with it's own brain and can even improve theirselves with experiences. It like evolution.
-Reading is a habit that can make you extremely knowledgeable.
+Ada Lovelace wrote the first algorithm for a mechanical computer in the mid-1800s, making her the world's first computer programmer.
+The word "bug" started in 1947 when a real moth got stuck in the Harvard Mark II computer.
+Every website, app, and online tool runs entirely on software systems.  
+NASA uses heavily tested software to run space missions and keep astronauts safe.
+Big modern video games can have over 100 million lines of code.
+FORTRAN arrived in 1957 as one of the first major programming languages.
+JavaScript is widely used as one of the most popular programming languages in the world.    
+Programmers often drink multiple cups of coffee a day to stay awake and code.
+The computer that helped land people on the moon had only about 64 kilobytes of memory.
+Programmers often talk to a rubber duck on their desk to solve tricky code problems.
+People share free code online so teams worldwide can build better tools together.
+Most people write a tiny program that says "Hello, World!" when learning a new language.
+Billions of lines of old COBOL code still run important banking and government systems.
+Cloud computing lets people use apps online without installing them on a local device.
+Tech changes fast, so software creators must learn new tools all the time.
+Scratch is also a programming language.

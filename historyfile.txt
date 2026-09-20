@@ -1,5 +1,0 @@
-python
-ai
-reading
-python
-Machine learning

@@ -7,7 +7,11 @@ def get_number(message):
 
 def match(data, search):
     info = []
-    for a in data:
-        if search.lower() in a.lower():
-            info.append(a)
-    return info       
+    search = search.split()
+
+    for searches in search:
+        for a in data:
+            if searches.lower() in a.lower():  
+                info.append(a)
+    info = set(info)
+    return info    

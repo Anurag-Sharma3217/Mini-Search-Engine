@@ -1,123 +1,153 @@
 # Mini Search Engine V2
 
-A beginner Python project that simulates a simple local search engine using Python data structures, functions, multiple modules, and file handling.
+A command-line search engine built in Python as part of my software development learning journey.
 
-This project was built as part of my Python learning journey to understand how search systems can store, retrieve, and match information.
+This project stores documents, searches through them using keywords, tracks search history, saves data using file handling, and provides basic search analytics.
 
 ## Features
 
+### Search System
+
 * Search documents by keyword
-* Display all stored documents
+* Multi-keyword search
+* Case-insensitive matching
+* Display all matching results
+* Result numbering
+* Result count display
+
+### Document Management
+
 * Add new documents
-* Store and display search history
-* Save documents to a text file
-* Load documents when the program starts
-* Save search history to a text file
+* View all documents
+* Persistent storage using text files
+* Automatic loading when the program starts
+
+### Search History
+
+* Store search history
 * Load previous search history
-* Case-insensitive searching
-* Modular Python code using multiple files
-* Basic input validation
+* View all past searches
+
+### Analytics
+
+* Total searches performed
+* Last search performed
+* History size
+* Most searched keyword
+
+### Reliability
+
+* Handles empty files
+* Handles missing files
+* Input validation
+* Modular code structure
+
+---
 
 ## Project Structure
 
 ```text
-Search Engine V2/
+Mini-Search-Engine/
 │
 ├── main.py
-├── Function.py
-├── Utils.py
-├── FileHandling.py
+├── function.py
+├── utils.py
+├── fileHandling.py
+│
 ├── documents.txt
 ├── historyfile.txt
+│
 ├── README.md
 ├── .gitignore
 └── LICENSE
 ```
 
-### `main.py`
+### File Overview
 
-Controls the main program flow and menu.
+#### main.py
 
-### `Function.py`
+Controls program flow and menu navigation.
 
-Contains the main application functions such as searching, viewing documents, adding documents, and displaying history.
+#### Function.py
 
-### `Utils.py`
+Contains application features such as searching, viewing data, analytics, and history.
 
-Contains reusable helper functions used by the application.
+#### Utils.py
 
-### `FileHandling.py`
+Contains helper functions used throughout the project.
+
+#### FileHandling.py
 
 Handles saving and loading documents and search history.
 
-### `documents.txt`
+#### documents.txt
 
-Stores the documents used by the search engine.
+Stores searchable documents.
 
-### `historyfile.txt`
+#### historyfile.txt
 
 Stores previous search queries.
 
-## How It Works
+---
 
-When the program starts, it loads previously saved documents and search history from text files.
+## Example Workflow
 
-The user can then:
+1. Start program
+2. Documents and history load automatically
+3. Add documents
+4. Search using one or multiple keywords
+5. View search analytics
+6. Exit program
+7. Data is available next time the program runs
 
-1. Search for information
-2. View stored documents
-3. Add a new document
-4. View search history
-5. Exit the program
+---
 
-When new documents or searches are added, the information can be saved to the corresponding files.
+## Concepts Practiced
 
-## Technologies
-
-* Python
-* File Handling
+* Python functions
 * Lists
-* Strings
+* Dictionaries
 * Loops
-* Functions
-* Modules
-* Basic searching and matching
-* Git & GitHub
+* Strings
+* File handling
+* Modular programming
+* Searching algorithms
+* Input validation
+* Basic analytics
+* Git
+* GitHub
 
-## Learning Goals
+---
 
-This project was created to practice:
+## Learning Goal
 
-* Breaking a program into multiple modules
-* Writing reusable functions
-* Working with lists and strings
-* Searching and matching data
-* Persisting program data using files
-* Debugging and handling edge cases
-* Structuring a larger Python program
+The purpose of this project is not to build a production search engine.
+
+The purpose is to learn how software systems are structured, how data is stored and retrieved, and how multiple Python concepts work together inside one project.
+
+---
 
 ## Future Improvements
 
-Planned improvements include:
+* Search ranking and relevance scoring
+* Better indexing system
+* Object-oriented redesign
+* GUI version using Tkinter
+* Database storage
+* API integration
 
-* Multi-keyword searching
-* Search relevance/ranking
-* Better result presentation
-* More advanced indexing
-* Improved error handling
-* Object-oriented design
-* GUI interface
-* Possible API/web integration
+---
 
 ## Status
 
-**Version 2 — In Development**
+Current Version: V2
 
-This is an educational project and is not intended to compete with real-world search engines.
+Actively developed as part of my Python learning roadmap.
+
+---
 
 ## Author
 
 Anurag Sharma
 
-Built as part of my Python and software development learning journey.
-
+Software engineering student and builder.

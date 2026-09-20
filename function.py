@@ -9,7 +9,8 @@ def menu():
 2. View Documents
 3. Add Document
 4. View Search History
-5. Exit
+5. Search Analytics
+6. Exit
 
 Enter choice: \n''')
 
@@ -18,26 +19,27 @@ Enter choice: \n''')
 def search(data):
 
     if data:
-        searchs = input()
+        searches = input("Write keywords to search: ")
 
-        if searchs.strip() is not "":
-            info = utils.match(data, searchs)
+        if searches.strip() != "":
+            info = utils.match(data, searches)
 
             if info:
-                print(f"\n{len(info)} results found.")
-                for i, infos in enumerate(info, start=1):                  
+                print("\n==========RESULTS==========")                 
+                for i, infos in enumerate(info, start=1): 
                     print(f"{i}. {infos}")
+                print(f"\nTotal results: {len(info)}")
 
             else:
                 print("No results found.")
 
-            return searchs
+            return searches
 
         else:
             print("Search cannot be empty.")    
 
     else:
-        print("Data inavaiable.")
+        print("Add documents to start searching.")
 
 def view_data(data):
 
@@ -54,8 +56,13 @@ def add_data(data):
     print("Data saved.")
 
 def history(history):
-    for i, h in enumerate(history, start=1):
-        print(f"{i}. {h}")
+
+    if history:
+        for i, h in enumerate(history, start=1):
+            print(f"{i}. {h}")
+
+    else:
+        print("Search something to create historoy.")
 
 def exit_program():
     print("Thank you for using.")
@@ -63,30 +70,19 @@ def exit_program():
 def invalid():
     print("Invalid option.")
 
-#File Handling's functions to make the programs more useful and real.
+# Search Analytics Function
 
-def save_data(data):
-    file = open("documents.txt", "w")
-    for info in data:
-        file.write(info + "\n")
-    file.close()
+def total_searches(search_history):
+    print(f"Total searches: {len(search_history)}")
 
-def load_data(data):
-    file = open("documents.txt", "r")
-    for line in file:
-        line = line.strip("\n")
-        data.append(line)
-    file.close()
+def recent_search(search_history):
+    print(f"most recent searches: {search_history[-1]}")
 
-def save_history(history):
-    file = open("historyfile.txt", "w")
-    for searches in history:
-        file.write(searches + "\n")
-    file.close()
-
-def load_history(history):
-    file = open("historyfile.txt", "r")
-    for line in file:
-        line = line.strip("\n")
-        history.append(line)
-    file.close()
+def most_search(search_history):
+    highest_number = 0
+    highest_search = ""
+    for search in search_history:
+        if highest_number < search_history.count(search):
+            highest_number = search_history.count(search)
+            highest_search = search
+    print(f"Most search: {highest_search}")
