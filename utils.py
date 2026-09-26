@@ -6,12 +6,21 @@ def get_number(message):
             print("Enter number only.")
 
 def match(data, search):
-    info = []
+    results = []
     search = search.split()
 
-    for searches in search:
-        for a in data:
-            if searches.lower() in a.lower():  
-                info.append(a)
-    info = set(info)
-    return info    
+    for a in data:
+        score = 0
+        for searches in search:
+            if searches.lower() in a.lower():
+                score += 1
+        if score > 0:
+            results.append((a, score))
+    results = set(results)
+    results = list(results)
+    results.sort(
+        key=lambda result: result[1],
+        reverse=True
+    )
+    return results
+

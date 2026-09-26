@@ -27,7 +27,7 @@ def search(data):
             if info:
                 print("\n==========RESULTS==========")                 
                 for i, infos in enumerate(info, start=1): 
-                    print(f"{i}. {infos}")
+                    print(f"{i}. {infos[0]} (score: {infos[1]})")
                 print(f"\nTotal results: {len(info)}")
 
             else:

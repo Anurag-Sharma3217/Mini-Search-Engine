@@ -1,53 +1,90 @@
-# Mini Search Engine V2
+# Mini Search Engine V2.5
 
-A command-line search engine built in Python as part of my software development learning journey.
+A command-line search engine built in Python to explore how real software systems search, store, analyze, and rank information.
 
-This project stores documents, searches through them using keywords, tracks search history, saves data using file handling, and provides basic search analytics.
+The project evolved from a simple keyword search tool into a modular search engine with search analytics, persistence, and relevance-based ranking.
+
+---
 
 ## Features
 
-### Search System
+### Search
 
-* Search documents by keyword
+* Keyword search
 * Multi-keyword search
 * Case-insensitive matching
-* Display all matching results
-* Result numbering
+* Relevance scoring
+* Ranked search results
 * Result count display
 
 ### Document Management
 
-* Add new documents
-* View all documents
-* Persistent storage using text files
-* Automatic loading when the program starts
+* Add documents
+* View documents
+* Persistent document storage
 
-### Search History
+### Search Analytics
 
-* Store search history
-* Load previous search history
-* View all past searches
-
-### Analytics
-
-* Total searches performed
-* Last search performed
-* History size
+* Search history tracking
 * Most searched keyword
+* Last searched keyword
+* Total searches
 
-### Reliability
+### File Handling
 
+* Automatic loading on startup
+* Automatic saving
 * Handles empty files
-* Handles missing files
-* Input validation
-* Modular code structure
+* Handles missing files safely
+
+### Architecture
+
+* Modular codebase
+* Utility functions separated
+* Search logic separated
+* File handling separated
+* Main application separated
+
+---
+
+## Example Search
+
+Query:
+
+```text
+python ai
+```
+
+Results:
+
+```text
+1. Python is used for AI (Score: 2)
+2. AI basics (Score: 1)
+3. Python tutorial (Score: 1)
+```
+
+---
+
+## Technologies Used
+
+* Python
+* Functions
+* Lists
+* Dictionaries
+* Strings
+* Loops
+* File Handling
+* Search Algorithms
+* Ranking Logic
+* Git
+* GitHub
 
 ---
 
 ## Project Structure
 
 ```text
-Mini-Search-Engine/
+Mini Search Engine
 │
 ├── main.py
 ├── function.py
@@ -58,91 +95,45 @@ Mini-Search-Engine/
 ├── historyfile.txt
 │
 ├── README.md
-├── .gitignore
-└── LICENSE
+└── .gitignore
 ```
 
-### File Overview
+---
 
-#### main.py
+## Learning Outcomes
 
-Controls program flow and menu navigation.
+This project helped practice:
 
-#### Function.py
-
-Contains application features such as searching, viewing data, analytics, and history.
-
-#### Utils.py
-
-Contains helper functions used throughout the project.
-
-#### FileHandling.py
-
-Handles saving and loading documents and search history.
-
-#### documents.txt
-
-Stores searchable documents.
-
-#### historyfile.txt
-
-Stores previous search queries.
+* Breaking large programs into modules
+* Data processing
+* Search algorithms
+* Ranking systems
+* File persistence
+* Debugging
+* Software architecture
+* Git and GitHub workflows
 
 ---
 
-## Example Workflow
+## Current Version
 
-1. Start program
-2. Documents and history load automatically
-3. Add documents
-4. Search using one or multiple keywords
-5. View search analytics
-6. Exit program
-7. Data is available next time the program runs
+Version: V2.5
 
----
+Implemented:
 
-## Concepts Practiced
+* Multi-keyword search
+* Relevance scoring
+* Ranked results
+* Search analytics
+* Search history
+* File persistence
 
-* Python functions
-* Lists
-* Dictionaries
-* Loops
-* Strings
-* File handling
-* Modular programming
-* Searching algorithms
-* Input validation
-* Basic analytics
-* Git
-* GitHub
+Future:
 
----
-
-## Learning Goal
-
-The purpose of this project is not to build a production search engine.
-
-The purpose is to learn how software systems are structured, how data is stored and retrieved, and how multiple Python concepts work together inside one project.
-
----
-
-## Future Improvements
-
-* Search ranking and relevance scoring
-* Better indexing system
-* Object-oriented redesign
-* GUI version using Tkinter
-* Database storage
-* API integration
-
----
-
-## Status
-
-Current Version: V2
-
-Actively developed as part of my Python learning roadmap.
+* OOP version
+* GUI version
+* Database integration
+* Better indexing
 
 ---
 
@@ -150,4 +141,4 @@ Actively developed as part of my Python learning roadmap.
 
 Anurag Sharma
 
-Software engineering student and builder.
+Learning software engineering through project-based development.
